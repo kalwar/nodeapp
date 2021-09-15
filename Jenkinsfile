@@ -20,6 +20,7 @@ pipeline {
            sh "npm run sonar"
            }
        }
+     }
     }
   }
 }
