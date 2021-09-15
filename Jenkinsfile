@@ -11,7 +11,13 @@ pipeline {
         }
       }
     }
+    stage("Install Project Dependencies") {
+   steps {
+       nodejs(nodeJSInstallationName: 'node'){
+           sh "npm install"
+           }
+       }
+    }
   }
 }
-
 
